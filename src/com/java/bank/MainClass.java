@@ -8,14 +8,15 @@ public class MainClass {
 	
 	public static void main(String[] args) {
 		Customer customer = generateCustommerInformation();
+		Customer newCustomer = CustomerService.signUp(customer);
 	}
 
 	private static Customer generateCustommerInformation() {
 		Customer customer = new Customer();
-		customer.setFirstName("Jane");
-		customer.setLastName("Bob");
+		customer.setFirstName("Joe");
+		customer.setLastName("Billy");
 		customer.setAge(31);
-		customer.setOccupation("Janitor");
+		customer.setOccupation("Doctor");
 		return customer;
 	}
 
